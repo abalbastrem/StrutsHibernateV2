@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="liga")
-public class Liga {
+public class LigaAction {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ public class Liga {
 	private String nombre;
 
 	@Column(name="equipos")
-	private ArrayList<Equipo> equipos;
+	private ArrayList<EquipoAction> equipos;
 
 	public long getId() {
 		return id;
@@ -39,11 +39,11 @@ public class Liga {
 		this.nombre = nombre;
 	}
 
-	public ArrayList<Equipo> getEquipos() {
+	public ArrayList<EquipoAction> getEquipos() {
 		return equipos;
 	}
 
-	public void setEquipos(ArrayList<Equipo> equipos) {
+	public void setEquipos(ArrayList<EquipoAction> equipos) {
 		this.equipos = equipos;
 	}
 

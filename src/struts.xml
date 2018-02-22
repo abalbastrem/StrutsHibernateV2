@@ -13,6 +13,15 @@
 			<result name="SUCCESS">welcome_user.jsp</result>
 			<result name="ERROR">login.jsp</result>
 		</action>
+		<action name="Ligas" class="action.LigaAction">
+			<result>ligas.jsp</result>
+		</action>
+		<action name="Ligas" class="action.JugadorAction">
+			<result>jugadores.jsp</result>
+		</action>
+		<action name="Equipo" class="action.EquipoAction">
+			<result>jugadores.jsp</result>
+		</action>
 	</package>
 	
 </struts>
