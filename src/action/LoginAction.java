@@ -3,7 +3,7 @@ package action;
 public class LoginAction{
 
 	private String username2;
-	private String passwordasd;
+	private String password;
 	 
 	public String getUsername() {
 		System.out.println(username2);
