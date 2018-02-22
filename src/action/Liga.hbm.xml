@@ -1,0 +1,9 @@
+<hibernate-mapping>
+	<class name="prueba.Liga" table="LIGA">
+		<id name="id" column="ID">
+			<generator class="identity"/>
+		</id>
+		<property name="nombre"/>
+		<property name="jugadores"/>	
+	</class>
+</hibernate-mapping>
