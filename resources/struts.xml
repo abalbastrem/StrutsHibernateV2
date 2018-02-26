@@ -13,14 +13,20 @@
 			<result name="SUCCESS">welcome_user.jsp</result>
 			<result name="ERROR">login.jsp</result>
 		</action>
-		<action name="Ligas" class="action.LigaAction">
+		<action name="Liga" class="action.LigaAction">
 			<result>ligas.jsp</result>
 		</action>
-		<action name="Ligas" class="action.JugadorAction">
+		<action name="Jugador" class="action.JugadorAction">
 			<result>jugadores.jsp</result>
 		</action>
 		<action name="Equipo" class="action.EquipoAction">
 			<result>jugadores.jsp</result>
+		</action>
+	</package>
+	
+	<package name="" namespace="" extends="struts-default">
+		<action name="">
+			<result>Main.java</result>
 		</action>
 	</package>
 	
