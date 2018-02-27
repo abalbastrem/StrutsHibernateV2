@@ -16,35 +16,35 @@ public class Populate {
 		
 		JugadorAction j1 = new JugadorAction();
 		j1.setNombre("Sex Fabregas");
-		j1.setnGoles(69);
+		j1.setGoles(69);
 		
 		JugadorAction j2 = new JugadorAction();
 		j2.setNombre("Cristiano Chulazo");
-		j2.setnGoles(11);
+		j2.setGoles(11);
 		
 		JugadorAction j3 = new JugadorAction();
 		j3.setNombre("Messi Camxot");
-		j3.setnGoles(99999);
+		j3.setGoles(99999);
 		
 		JugadorAction j4 = new JugadorAction();
 		j4.setNombre("Andrés Inieste Gusiluz");
-		j4.setnGoles(57);
+		j4.setGoles(57);
 		
 		JugadorAction j5 = new JugadorAction();
 		j5.setNombre("Piqué President");
-		j5.setnGoles(58);
+		j5.setGoles(58);
 		
 		JugadorAction j6 = new JugadorAction();
 		j6.setNombre("Benzemá Finsdemà");
-		j6.setnGoles(24);
+		j6.setGoles(24);
 		
 		JugadorAction j7 = new JugadorAction();
 		j7.setNombre("Oliver Atom");
-		j7.setnGoles(987654321);
+		j7.setGoles(987654321);
 		
 		JugadorAction j8 = new JugadorAction();
 		j8.setNombre("Oliver no, el otro");
-		j8.setnGoles(987654321);
+		j8.setGoles(987654321);
 		
 		ArrayList<JugadorAction> jugadoresE1 = new ArrayList<>();
 		jugadoresE1.add(j1);
@@ -80,15 +80,15 @@ public class Populate {
 		e4.setNombre("Gavilanes");
 		e4.setJugadores(jugadoresE4);
 		
-		ArrayList<EquipoAction> equiposL1 = new ArrayList<>();
+		ArrayList<EquipoAction> equiposL1 = new ArrayList<EquipoAction>();
 		equiposL1.add(e1);
 		equiposL1.add(e3);
 		
-		ArrayList<EquipoAction> equiposL2 = new ArrayList<>();
+		ArrayList<EquipoAction> equiposL2 = new ArrayList<EquipoAction>();
 		equiposL2.add(e1);
 		equiposL2.add(e2);
 		
-		ArrayList<EquipoAction> equiposL3 = new ArrayList<>();
+		ArrayList<EquipoAction> equiposL3 = new ArrayList<EquipoAction>();
 		equiposL3.add(e4);
 		equiposL3.add(e3);
 		

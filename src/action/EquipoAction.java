@@ -1,17 +1,20 @@
 package action;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="equipo")
-public class EquipoAction {
+public class EquipoAction implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -20,8 +23,18 @@ public class EquipoAction {
 	@Column(name="nombre")
 	private String nombre;
 	
-	@Column(name="jugadores")
-	private ArrayList<JugadorAction> jugadores;
+	@OneToMany(mappedBy="equipo")
+//	@Column(name="jugadores")
+	private List<JugadorAction> jugadores = new ArrayList<JugadorAction>();
+	
+	private LigaAction liga;
+	public LigaAction getLiga() {
+		return liga;
+	}
+
+	public void setLiga(LigaAction liga) {
+		this.liga = liga;
+	}
 
 	public long getId() {
 		return id;
@@ -39,11 +52,11 @@ public class EquipoAction {
 		this.nombre = nombre;
 	}
 
-	public ArrayList<JugadorAction> getJugadores() {
+	public List<JugadorAction> getJugadores() {
 		return jugadores;
 	}
 
-	public void setJugadores(ArrayList<JugadorAction> jugadores) {
+	public void setJugadores(List<JugadorAction> jugadores) {
 		this.jugadores = jugadores;
 	}
 

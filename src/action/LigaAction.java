@@ -1,6 +1,8 @@
 package action;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,7 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="liga")
-public class LigaAction {
+public class LigaAction implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -21,7 +23,7 @@ public class LigaAction {
 	private String nombre;
 
 	@Column(name="equipos")
-	private ArrayList<EquipoAction> equipos;
+	private List<EquipoAction> equipos = new ArrayList<EquipoAction>();
 
 	public long getId() {
 		return id;
@@ -39,11 +41,11 @@ public class LigaAction {
 		this.nombre = nombre;
 	}
 
-	public ArrayList<EquipoAction> getEquipos() {
+	public List<EquipoAction> getEquipos() {
 		return equipos;
 	}
 
-	public void setEquipos(ArrayList<EquipoAction> equipos) {
+	public void setEquipos(List<EquipoAction> equipos) {
 		this.equipos = equipos;
 	}
 

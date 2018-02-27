@@ -1,9 +1,17 @@
 <hibernate-mapping>
-	<class name="prueba.Equipo" table="EQUIPO">
-		<id name="id" column="ID">
-			<generator class="identity"/>
-		</id>
-		<property name="nombre"/>
-		<property name="jugadores"/>	
-	</class>
+    <class name="action.EquipoAction" table="equipo">
+        <id name="id" column="id_equipo">
+            <generator class="identity"/>
+        </id>
+        <property name="nombre" />
+        
+		<list name="jugadores" cascade="all-delete-orphan">
+            <key column="id_jugador" />
+            <index column="orden" /> 
+            <one-to-many class="action.JugadorAction" />
+        </list>
+
+        <many-to-one name="liga" column="id_liga"  />
+         
+    </class>
 </hibernate-mapping>

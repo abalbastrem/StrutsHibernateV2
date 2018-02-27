@@ -30,15 +30,16 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">create</property>
 
-<!--         <mapping resource="prueba/event.hbm.xml" /> -->
-<!--         <mapping resource="prueba/Direccion.hbm.xml" /> -->
-<!--         <mapping resource="prueba/Persona.hbm.xml" /> -->
+<!-- HBM DE TODA LA VIDA DE DIOS -->
+        <mapping resource="action/EquipoAction.hbm.xml" />
+        <mapping resource="action/JugadorAction.hbm.xml" />
+        <mapping resource="action/LigaAction.hbm.xml" />
 
 <!-- CLASES ANOTADAS -->
-			<mapping class="action.LoginAction"/>
-			<mapping class="action.EquipoAction"/>
-			<mapping class="action.JugadorAction"/>
-			<mapping class="action.LigaAction"/>
+<!-- 		<mapping class="action.LoginAction"/> -->
+<!-- 		<mapping class="action.EquipoAction"/> -->
+<!-- 		<mapping class="action.JugadorAction"/> -->
+<!-- 		<mapping class="action.LigaAction"/> -->
     </session-factory>
 
 </hibernate-configuration>
