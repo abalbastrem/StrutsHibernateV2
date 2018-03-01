@@ -20,13 +20,13 @@
 			<result>jugadores.jsp</result>
 		</action>
 		<action name="Equipo" class="action.EquipoAction">
-			<result>jugadores.jsp</result>
+			<result>equipos.jsp</result>
 		</action>
 	</package>
 	
-	<package name="" namespace="" extends="struts-default">
+	<package name="" namespace="/" extends="struts-default">
 		<action name="">
-			<result>Main.java</result>
+			<result>welcome_user.jsp</result>
 		</action>
 	</package>
 	

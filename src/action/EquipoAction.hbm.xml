@@ -3,6 +3,7 @@
         <id name="id" column="id_equipo">
             <generator class="identity"/>
         </id>
+        
         <property name="nombre" />
         
 		<list name="jugadores" cascade="all-delete-orphan">

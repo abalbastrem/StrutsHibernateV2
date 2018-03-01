@@ -13,20 +13,14 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="jugador")
-public class JugadorAction implements Serializable {
+public class JugadorAction {
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	
-	@Column(name="nombre")
 	private String nombre;
 	
-	@Column(name="goles")
 	private int goles;
 	
-	@ManyToOne
-//	@JoinColumn(name="id")
 	private EquipoAction equipo;
 	public EquipoAction getEquipo() {
 		return equipo;

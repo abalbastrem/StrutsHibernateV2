@@ -14,17 +14,12 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="equipo")
-public class EquipoAction implements Serializable {
+public class EquipoAction {
 	
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private long id;
 	
-	@Column(name="nombre")
 	private String nombre;
 	
-	@OneToMany(mappedBy="equipo")
-//	@Column(name="jugadores")
 	private List<JugadorAction> jugadores = new ArrayList<JugadorAction>();
 	
 	private LigaAction liga;

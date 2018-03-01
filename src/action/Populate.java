@@ -24,7 +24,7 @@ public class Populate {
 		
 		JugadorAction j3 = new JugadorAction();
 		j3.setNombre("Messi Camxot");
-		j3.setGoles(99999);
+		j3.setGoles(9999);
 		
 		JugadorAction j4 = new JugadorAction();
 		j4.setNombre("Andrés Inieste Gusiluz");
@@ -40,20 +40,20 @@ public class Populate {
 		
 		JugadorAction j7 = new JugadorAction();
 		j7.setNombre("Oliver Atom");
-		j7.setGoles(987654321);
+		j7.setGoles(987);
 		
 		JugadorAction j8 = new JugadorAction();
 		j8.setNombre("Oliver no, el otro");
-		j8.setGoles(987654321);
+		j8.setGoles(986);
 		
 		ArrayList<JugadorAction> jugadoresE1 = new ArrayList<>();
-		jugadoresE1.add(j1);
+//		jugadoresE1.add(j1);
 		jugadoresE1.add(j3);
 		jugadoresE1.add(j4);
 		jugadoresE1.add(j5);
 		
 		ArrayList<JugadorAction> jugadoresE2 = new ArrayList<>();
-		jugadoresE2.add(j2);
+//		jugadoresE2.add(j2);
 		jugadoresE2.add(j6);
 		
 		ArrayList<JugadorAction> jugadoresE3 = new ArrayList<>();
@@ -81,7 +81,7 @@ public class Populate {
 		e4.setJugadores(jugadoresE4);
 		
 		ArrayList<EquipoAction> equiposL1 = new ArrayList<EquipoAction>();
-		equiposL1.add(e1);
+//		equiposL1.add(e1);
 		equiposL1.add(e3);
 		
 		ArrayList<EquipoAction> equiposL2 = new ArrayList<EquipoAction>();
@@ -90,7 +90,7 @@ public class Populate {
 		
 		ArrayList<EquipoAction> equiposL3 = new ArrayList<EquipoAction>();
 		equiposL3.add(e4);
-		equiposL3.add(e3);
+//		equiposL3.add(e3);
 		
 		LigaAction l1 = new LigaAction();
 		l1.setNombre("Eurocopa");
@@ -121,6 +121,7 @@ public class Populate {
 		session.save(j6);
 		session.save(j7);
 		session.save(j8);
+		
 		
 		session.getTransaction().commit();
 		
