@@ -1,0 +1,15 @@
+<hibernate-mapping>
+    <class name="action.LigaAction" table="liga">
+        <id name="id" column="id_liga">
+            <generator class="identity" />
+        </id>
+
+        <property name="nombre" />
+
+        <list name="equipos" cascade="all-delete-orphan">
+            <key column="id_liga" />
+            <index column="orden" /> 
+            <one-to-many class="action.EquipoAction" />
+        </list>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,13 @@
+<hibernate-mapping>
+    <class name="action.JugadorAction" table="jugador">
+        <id name="id" column="id_jugador">
+            <generator class="identity" />
+        </id>
+
+        <property name="nombre" />
+        <property name="goles" />
+        
+        <many-to-one name="equipo" column="id_equipo"  />
+        
+    </class>
+</hibernate-mapping>
