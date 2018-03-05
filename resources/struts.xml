@@ -14,7 +14,7 @@
 			<result name="ERROR">login.jsp</result>
 		</action>
 		<action name="Liga" class="action.LigaAction">
-			<result>ligas.jsp</result>
+			<result name="SUCCESS">ligas.jsp</result>
 		</action>
 		<action name="Jugador" class="action.JugadorAction">
 			<result>jugadores.jsp</result>

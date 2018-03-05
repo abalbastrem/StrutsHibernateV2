@@ -5,8 +5,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Jugadores</title>
 </head>
+<script>
+</script>
 <body>
-
+	
 	<ol>
 	<s:iterator value="jugadores">
 		<li><s:property /></li>

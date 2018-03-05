@@ -44,6 +44,6 @@
 
 </hibernate-configuration>
 
-<!-- COMPROBACIÓN RÁPIDA 
+<!-- COMPROBACIÓN RÁPIDA DE LA CAPA PERSISTENCE
 SELECT * FROM equipo JOIN jugador ON jugador.id_equipo=equipo.id_equipo JOIN liga ON liga.id_liga=equipo.id_liga;
  -->

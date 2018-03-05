@@ -8,7 +8,7 @@
 <body>
 
 	<ol>
-	<s:iterator value="liga">
+	<s:iterator value="ligaAction">
 		<li><s:property /></li>
 	</s:iterator>
 	</ol>
