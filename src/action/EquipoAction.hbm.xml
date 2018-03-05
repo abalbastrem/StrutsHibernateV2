@@ -7,7 +7,7 @@
         <property name="nombre" />
         
 		<list name="jugadores" cascade="all-delete-orphan">
-            <key column="id_jugador" />
+            <key column="id_equipo" />
             <index column="orden" /> 
             <one-to-many class="action.JugadorAction" />
         </list>

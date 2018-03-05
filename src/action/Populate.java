@@ -47,13 +47,11 @@ public class Populate {
 		j8.setGoles(986);
 		
 		ArrayList<JugadorAction> jugadoresE1 = new ArrayList<>();
-//		jugadoresE1.add(j1);
 		jugadoresE1.add(j3);
 		jugadoresE1.add(j4);
 		jugadoresE1.add(j5);
 		
 		ArrayList<JugadorAction> jugadoresE2 = new ArrayList<>();
-//		jugadoresE2.add(j2);
 		jugadoresE2.add(j6);
 		
 		ArrayList<JugadorAction> jugadoresE3 = new ArrayList<>();
@@ -81,7 +79,6 @@ public class Populate {
 		e4.setJugadores(jugadoresE4);
 		
 		ArrayList<EquipoAction> equiposL1 = new ArrayList<EquipoAction>();
-//		equiposL1.add(e1);
 		equiposL1.add(e3);
 		
 		ArrayList<EquipoAction> equiposL2 = new ArrayList<EquipoAction>();
@@ -90,7 +87,6 @@ public class Populate {
 		
 		ArrayList<EquipoAction> equiposL3 = new ArrayList<EquipoAction>();
 		equiposL3.add(e4);
-//		equiposL3.add(e3);
 		
 		LigaAction l1 = new LigaAction();
 		l1.setNombre("Eurocopa");
@@ -108,23 +104,7 @@ public class Populate {
 		session.save(l2);
 		session.save(l3);
 		
-		session.save(e1);
-		session.save(e2);
-		session.save(e3);
-		session.save(e4);
-		
-		session.save(j1);
-		session.save(j2);
-		session.save(j3);
-		session.save(j4);
-		session.save(j5);
-		session.save(j6);
-		session.save(j7);
-		session.save(j8);
-		
-		
 		session.getTransaction().commit();
-		
 		session.close();
 		
 		System.out.println("DATABASE SHOULD BE POPULATED CORRECTLY.");
