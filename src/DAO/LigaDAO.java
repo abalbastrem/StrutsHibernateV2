@@ -1,5 +1,6 @@
 package DAO;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.Session;
@@ -9,18 +10,31 @@ import action.LigaAction;
 
 public class LigaDAO {
 	
-	private List<LigaAction> ligas;
+	private List<LigaAction> ligas = new ArrayList<>();
 	
 	public String execute() {
+		//todo
+		rellenarLigas();
 		return "SUCCESS";
 	}
 	
+	
 	public List<LigaAction> getLigas() {
+		return ligas;
+	}
+
+
+	public void setLigas(List<LigaAction> ligas) {
+		this.ligas = ligas;
+	}
+
+
+	void rellenarLigas(){
+		System.out.println("DAO LIstando ligas");
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
-		List<LigaAction> ligas = session.createQuery("from ligas").list();
+		ligas.addAll(session.createQuery("from ligas").list());
 		session.close();
-		return ligas;
 	}
 
 }

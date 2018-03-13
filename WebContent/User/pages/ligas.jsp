@@ -7,9 +7,13 @@
 </head>
 <body>
 
+	<s:form action="listLigas" method="post">
+		<s:submit value="Lista las ligas"></s:submit>
+	</s:form>
+
 	<ol>
-	<s:iterator value="ligaAction">
-		<li><s:property /></li>
+	<s:iterator value="ligas">
+		<li><s:property value="nombre"/></li>
 	</s:iterator>
 	</ol>
 
