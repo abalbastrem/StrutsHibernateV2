@@ -6,19 +6,19 @@
 <struts>
 
 
-<!-- 	<package name="default" namespace="/" extends="struts-default"> -->
-<!-- 		<action name="listLigas" class="DAO.LigaDAO"> -->
-<!-- 			<result name="SUCCESS">ligas.jsp</result> -->
-<!-- 			<result name="ERROR">ligas.jsp</result> -->
-<!-- 		</action> -->
-<!-- 	</package> -->
-	
-	<package name="User" namespace="/User/pages" extends="struts-default">
+	<package name="default" namespace="/" extends="struts-default">
 		<action name="listLigas" class="DAO.LigaDAO">
 			<result name="SUCCESS">ligas.jsp</result>
 			<result name="ERROR">ligas.jsp</result>
 		</action>
 	</package>
+	
+<!-- 	<package name="User" namespace="/User/pages" extends="struts-default"> -->
+<!-- 		<action name="listLigas" class="DAO.LigaDAO"> -->
+<!-- 			<result name="SUCCESS">ligas.jsp</result> -->
+<!-- 			<result name="ERROR">ligas.jsp</result> -->
+<!-- 		</action> -->
+<!-- 	</package> -->
 	
 
 </struts>

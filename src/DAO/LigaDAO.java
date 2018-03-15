@@ -13,7 +13,6 @@ public class LigaDAO {
 	private List<LigaAction> ligas = new ArrayList<>();
 	
 	public String execute() {
-		//todo
 		rellenarLigas();
 		return "SUCCESS";
 	}
@@ -30,7 +29,7 @@ public class LigaDAO {
 
 
 	void rellenarLigas(){
-		System.out.println("DAO LIstando ligas");
+		System.out.println("::::: DAO Listando ligas");
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
 		ligas.addAll(session.createQuery("from ligas").list());

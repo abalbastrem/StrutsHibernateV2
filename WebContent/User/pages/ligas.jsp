@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<s:form action="listLigas" method="post">
+	<s:form action="listLigas.action" namespace="/" method="post">
 		<s:submit value="Lista las ligas"></s:submit>
 	</s:form>
 
